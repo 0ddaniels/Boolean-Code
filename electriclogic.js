@@ -1,16 +1,16 @@
 //Initialize the variables below to what you want: either true or false.
-let outlet = True;
-let electricity = True;
+let outlet = true;
+let electricity = true;
 let plug = true;
-let powerSwitch = True;
+let powerSwitch = true;
 
 
 
 
 //These variables should never change.
 const on = true;
-const off = !on;
-let c = true;
+const off = !true;
+let c;
 
 
 
@@ -36,11 +36,11 @@ let oldPeople = powerSwitch && !powerswitch;
 
 // 4. You are unsure if your device is plugged in or turned on.  Set the variable unsure to the OPPOSITE of POWERSWITCH AND the group - aka parentheses - of the OPPOSITE of PLUG OR the OPPOSITE of OUTLET.
 
-let unsure = !powerswitch && ( !plug || !outlet );
+let unsure = !powerswitch && (!plug || !outlet);
 
 // 5. Something is broken.  You are not sure if it is your power cord or the wall.  Set the variable broken equal to the OUTLET OR the PLUG OR the POWERSWITCH
 
-let broken = outlet || plug || powerswitch;
+let broken = !outlet || !plug || !powerSwitch;
 
 
 
@@ -53,7 +53,7 @@ let broken = outlet || plug || powerswitch;
 */
 
 function reportResults(){
-    const message = "The device is"
+    const message =
         `
         The variable outlet: ${outlet},
         The variable electricty: ${electricity},
@@ -62,7 +62,7 @@ function reportResults(){
         `;
     console.log(message);
 
-    const result = ;
+    const result =
         `
         The output of ready = ${ready},
         The output of unPaid = ${unPaid},
