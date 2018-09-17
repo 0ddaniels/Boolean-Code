@@ -9,7 +9,7 @@ let powerSwitch = true;
 
 //These variables should never change.
 const on = true;
-const off = !true;
+const off = !on;
 let c;
 
 
@@ -32,16 +32,15 @@ let unPaid = electricity && false;
 
 // 3. Old people just don't understand electronics.  Fill in the variable oldPeople to be equal to powerSwitch AND the opposite of powerSwitch
 
-let oldPeople = powerSwitch && !powerswitch;
+let oldPeople = powerSwitch && !powerSwitch;
 
 // 4. You are unsure if your device is plugged in or turned on.  Set the variable unsure to the OPPOSITE of POWERSWITCH AND the group - aka parentheses - of the OPPOSITE of PLUG OR the OPPOSITE of OUTLET.
 
-let unsure = !powerswitch && (!plug || !outlet);
+let unsure = !powerSwitch && (!plug || !outlet);
 
 // 5. Something is broken.  You are not sure if it is your power cord or the wall.  Set the variable broken equal to the OUTLET OR the PLUG OR the POWERSWITCH
 
 let broken = !outlet || !plug || !powerSwitch;
-
 
 
 
